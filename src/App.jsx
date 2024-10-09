@@ -28,7 +28,12 @@ function App() {
           //this will return array of data
           imagesId.map(async (id) => {
             const response = await fetch(
-              `https://api.pexels.com/v1/photos/${id}`
+              `https://api.pexels.com/v1/photos/${id}`,
+              {
+                headers: {
+                  Authorization: import.meta.env.VITE_PEXELS_API_KEY,
+                },
+              }
             );
             const data = await response.json();
             return data;
