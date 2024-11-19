@@ -9,16 +9,17 @@
 .cards-container{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  justify-content: center;
+  gap:1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 
 }
 .card{
   background-color: #e6a3a3;
   border-radius: 2%;
   border: 1px black solid;
-  max-width: 18.5rem;
+  max-width: 14rem;
   overflow: hidden;
   margin-bottom: 4rem;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
@@ -29,11 +30,13 @@
 }
 .card_img{
   object-fit: cover;
-  max-width: 18.5rem;
+  height: 14rem;
+  width: 14rem;
 
 }
 .card_p{
+  padding:0.5rem;
   text-align: center;
-  font-size: x-large;
-  color: #634141;
+  font-size:medium;
+  color: #242424;
 }

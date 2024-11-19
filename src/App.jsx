@@ -52,7 +52,7 @@ function App() {
 
   return (
     <>
-      <p className="top-score">Highest : {topScore}</p>
+      <p className="top-score">Highest Score : {topScore}</p>
       <p className="score">Score : {score}</p>
       <Cards
         fetchedImages={fetchedImages}
